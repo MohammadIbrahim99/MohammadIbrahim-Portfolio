@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primaryTextColor: #232e35; /*untuk title atau judul*/
+  --secondaryTextColor: #656d72; /*untuk text biasa seperti paragraph
+    contohnya*/
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+  --backgroundColor: #00001a;
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f5f5;
+
+  --primaryIconColor: #7e74f1;
+  --primaryIconcolorHover: #5d51e8;
+
+  --sectionPadding: 4.5rem 0;
+  --itemBorderRadius: 0.7rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--backgroundColor);
+  color: white;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Logo adn navigation menu */
+
+.navbar-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  background: #ffcc00;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+  color: #00001a;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.btn:hover,
+.btn-2:hover {
+  background: white;
+  color: #00001a;
+}
+
+.main-container {
+  background-color: #00001a;
+}
+
+.nav .logo {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+div .logo span {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffcc00;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav a:hover {
+  color: #fcc00f;
+}
+/* Burger */
+
+#burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.hamburger-menu {
+  padding: 1rem 1rem;
+  display: none;
+}
+
+#burger svg {
+  fill: #fff;
+  height: 30px;
+}
+
+/* Hero Section */
+
+#hero {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  padding: 1rem 3rem;
+  padding-top: 5rem;
+}
+
+.hero-left {
+  margin-top: 11rem;
+  line-height: 4rem;
+}
+
+.hero-left .pre-title {
+  margin: 0 4px 0;
+  line-height: 2.8rem;
+}
+.hero-left p {
+  margin-left: 4px;
+}
+
+.hero-name .span-2,
+.hero-name .span-3 {
+  color: #ffcc00;
+}
+
+.hero-right img {
+  height: 35rem;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8));
+  position: absolute;
+  z-index: 3;
+}
+
+.back-image {
+  height: 18rem;
+  width: 18rem;
+  background-color: #00004d;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 85px;
+  margin-top: 1.8rem;
+  z-index: 2;
+}
+
+.back-image2 {
+  height: 28rem;
+  width: 28rem;
+  background-color: #000033;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 1.8rem;
+}
+
+#hero .hero-left,
+.hero-left span {
+  color: white;
+}
+
+.hero-name {
+  font-size: 5rem;
+}
+
+.hero-web {
+  font-size: 4rem;
+}
+
+.btn-2 {
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  background: #fcc00f;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+  color: #00001a;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 8rem;
+}
+
+/* servives section */
+
+#services {
+  background-color: #000033;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 6rem;
+}
+
+.pre-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.3rem;
+  padding: var(--sectionPadding);
+}
+.pre-title span {
+  color: #fcc00f;
+  font-size: 2.8rem;
+}
+
+.service {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #00001a;
+  border-radius: 8%;
+}
+.service p {
+  line-height: 1.2rem;
+  margin: 0 3rem;
+  font: 100;
+  font-size: 0.8rem;
+  font-family: "Roboto", Thin;
+}
+.service h4 {
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+  font-weight: 700 bold;
+  font-size: 1.05rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.service-icon {
+  background-color: #000033;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 50%;
+}
+
+.service-icon svg {
+  fill: white;
+}
+
+/* Portfolio section */
+
+.grid-3 {
+  padding: 0 6rem;
+  padding-bottom: 6rem;
+}
+.portfolio-cover {
+  height: 250px;
+}
+
+.portfolio-cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-1,
+.portfolio-2,
+.portfolio-3 {
+  border-radius: var(--itemBorderRadius);
+  overflow: hidden;
+  border: 1px solid;
+  background-color: #000033;
+}
+
+.portfolio-title h4 {
+  padding-top: 1rem;
+}
+
+.portfolio-info {
+  padding: 0 2rem;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-title a svg:hover {
+  cursor: pointer;
+  fill: #fcc00f;
+}
+
+.portfolio-title a svg {
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-link {
+  fill: white;
+  padding-top: 1rem;
+}
+
+.portfolio-tags {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  border: 1px white;
+}
+
+.portfolio-tags div {
+  font-size: 0.9rem;
+  border: 1px solid white;
+  padding: 0.4rem 1rem;
+}
+
+.portfolio-info p {
+  margin-bottom: 1rem;
+}
+
+/* Skills and Education */
+
+#skills {
+  padding: var(--sectionPadding);
+}
+
+.skills {
+  background-color: #000033;
+  padding: 0 4rem 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.education {
+  display: flex;
+  gap: 2rem;
+}
+
+.education .line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background-color: #00001a;
+  position: relative;
+}
+
+.education-info p {
+  margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+  margin-bottom: 3rem;
+}
+
+.education .line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: -6px;
+  top: 3px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-list ul {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+/* Contac Section */
+
+#contact {
+  padding: var(--sectionPadding);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  padding: 0 4rem;
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: #000033;
+  border: 1px solid white;
+  border-radius: 3px;
+  resize: none;
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: #fcc00f;
+  color: #00001a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: #000033;
+  color: #fff;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+  background-color: #fcc00f;
+  width: 53px;
+  height: 53px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item-icon svg {
+  fill: #000033;
+}
+
+/* Footer */
+
+footer {
+  padding: 4rem 0;
+  background-color: #000033;
+  text-align: center;
+}
+
+.footer-icon svg {
+  fill: #fff;
+  margin: 0 0.3rem 0.7rem;
+}
+
+.footer-icon svg:hover {
+  fill: #fcc00f;
+  outline: none;
+}
