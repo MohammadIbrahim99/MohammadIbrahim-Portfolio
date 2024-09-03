@@ -225,6 +225,8 @@ div .logo span {
 /* servives section */
 
 #services {
+  height: 720px;
+  width: 100%;
   background-color: #000033;
   padding-left: 2rem;
   padding-right: 3rem;
