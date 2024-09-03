@@ -141,7 +141,6 @@ div .logo span {
 /* Hero Section */
 
 #hero {
-  position: relative;
   height: 100vh;
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -264,12 +263,6 @@ div .logo span {
   font-size: 1.05rem;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-}
-
 .service-icon {
   background-color: #000033;
   width: fit-content;
@@ -283,6 +276,12 @@ div .logo span {
 }
 
 /* Portfolio section */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
 
 .grid-3 {
   padding: 0 6rem;

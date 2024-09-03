@@ -94,32 +94,33 @@
   }
 
   .back-image {
-    height: 10rem;
-    width: 10rem;
-    margin-left: 2.8rem;
+    height: 16rem;
+    width: 16rem;
+    margin-left: 4.3rem;
   }
 
   .back-image2 {
-    margin-left: 0.5rem;
-    height: 15rem;
-    width: 15rem;
+    margin-left: 0.2rem;
+    height: 24rem;
+    width: 24rem;
   }
 
   .hero-right img {
-    height: 20rem;
+    height: 30rem;
   }
 
   .span-1 {
-    font-size: 2rem;
+    font-size: 3.6rem;
+    margin-top: 1.5rem;
   }
 
   .span-4 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .hero-left h1,
   .hero-left h3 {
-    line-height: 1.3rem;
+    line-height: 2.8rem;
   }
 
   .hero-left h3 {
@@ -139,7 +140,6 @@
 
   .btn-2 {
     font-size: 0.8rem;
-    margin-bottom: 25rem;
   }
 
   .grid-3 {
@@ -154,6 +154,27 @@
 
   .navbar-header .logo span {
     font-size: 1.6rem;
+  }
+
+  #hero {
+    display: grid;
+    grid-template-columns: 10fr 0.5fr 0.5fr;
+  }
+
+  .hero-right {
+    grid-row: 1;
+    margin: 0;
+    padding-bottom: 0;
+    margin-left: 23rem;
+  }
+
+  .hero-left {
+    grid-row: 2;
+    margin-top: 32rem;
+  }
+
+  .btn-hero {
+    grid-row: 3;
   }
 }
 
